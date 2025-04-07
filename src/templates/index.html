@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block header_title %} {{ titulo }} - {{ block.super }} {% endblock header_title %}
+
+{% block content %}
+<ul>
+    <li>Total de visitas no site: {{ total_visits }}</li>
+    <li>Total de visitas na página: {{ page_visits }}</li>
+</ul>
+
+{% endblock content %}
